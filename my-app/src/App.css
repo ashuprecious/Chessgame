@@ -1,0 +1,227 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.snake-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f0f4f8;
+  min-height: 100vh;
+}
+
+.snake-title {
+  font-size: 2.5rem;
+  color: #2d8659;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0 #fff, 2px 2px 0 #d9f2e6;
+}
+
+.snake-canvas-wrapper {
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.15);
+  border-radius: 12px;
+  background: #fff;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.snake-canvas {
+  border: 3px solid #2d8659;
+  background: #eafaf1;
+  border-radius: 8px;
+  display: block;
+}
+
+.snake-score {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.snake-gameover {
+  margin-top: 18px;
+  background: #ffeaea;
+  border: 1px solid #ffb3b3;
+  padding: 18px 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.07);
+}
+
+.snake-gameover h2 {
+  color: #d32f2f;
+  margin-bottom: 10px;
+}
+
+.snake-restart-btn {
+  background: #2d8659;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+
+.snake-restart-btn:hover {
+  background: #226644;
+}
+
+.snake-instructions {
+  margin-top: 18px;
+  color: #888;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.chess-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f0f4f8;
+  min-height: 100vh;
+}
+
+.chess-title {
+  font-size: 2.5rem;
+  color: #2d8659;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0 #fff, 2px 2px 0 #d9f2e6;
+}
+
+.chess-status {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.chess-board {
+  display: grid;
+  grid-template-columns: repeat(8, 48px);
+  grid-template-rows: repeat(8, 48px);
+  border: 4px solid #2d8659;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.15);
+  background: #fff;
+  margin-bottom: 18px;
+}
+
+.chess-square {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.1s;
+  user-select: none;
+}
+
+.chess-square.white {
+  background: #f0d9b5;
+}
+
+.chess-square.black {
+  background: #b58863;
+}
+
+.chess-square.selected {
+  outline: 3px solid #61dafb;
+  z-index: 1;
+}
+
+.chess-square.possible {
+  background: #e6f7ff;
+}
+
+.piece {
+  pointer-events: none;
+}
+
+.white-piece {
+  color: #fff;
+  text-shadow: 0 0 2px #222, 0 2px 2px #bbb;
+}
+
+.black-piece {
+  color: #222;
+  text-shadow: 0 0 2px #fff, 0 2px 2px #888;
+}
+
+.move-dot {
+  width: 14px;
+  height: 14px;
+  background: rgba(44, 62, 80, 0.18);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+.chess-reset-btn {
+  background: #2d8659;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.chess-reset-btn:hover {
+  background: #226644;
+}
+
+.chess-instructions {
+  margin-top: 12px;
+  color: #888;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
