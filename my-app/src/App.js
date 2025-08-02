@@ -17,6 +17,8 @@ const pieceUnicode = {
   bK: '♚', bQ: '♛', bR: '♜', bB: '♝', bN: '♞', bP: '♟',
 };
 
+// /gghhvsyhgdysagdyasgd
+
 function isWhite(piece) {
   return piece && piece[0] === 'w';
 }
